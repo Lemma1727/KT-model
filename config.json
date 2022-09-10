@@ -5,13 +5,17 @@
         "seq_len": 100
     },
     "train_config": {
-        "epochs": 100,
+        "epochs": 50,
         "lr": 0.001
     },
     "model_config": {
         "DKT": {
             "emb_size": 100,
             "hidden_size": 100
+        },
+        "DKVMN": {
+            "s_dim": 50,
+            "m_size": 20
         }
     }
 

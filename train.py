@@ -8,6 +8,7 @@ from torch.optim import Adam
 from data_loader.ASSIST2009 import assist2009
 from data_loader.ASSIST2015 import assist2015
 from models.dkt import DKT
+from models.dkvmn import DKVMN
 
 def main(model_name, data):
     with open("config.json") as f:
@@ -32,6 +33,8 @@ def main(model_name, data):
 
     if model_name == "DKT":
         model = DKT(num_q, **model_config).to(device)
+    elif model_name == "DKVMN":
+        model = DKVMN(num_q, **model_config).to(device)
     else:
         print("model name was worng")
         return
