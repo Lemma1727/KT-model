@@ -16,6 +16,12 @@
         "DKVMN": {
             "s_dim": 50,
             "m_size": 20
+        },
+        "SAKT": {
+            "d_dim": 100,
+            "len_n": 100,
+            "head_dim": 5,
+            "dropout_ratio": 0.2
         }
     }
 
