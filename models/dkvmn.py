@@ -3,8 +3,7 @@ import os
 import numpy as np
 import torch
 
-from torch.nn import Module, Embedding, LSTM, Linear, Dropout, Parameter
-from torch.nn.functional import one_hot, binary_cross_entropy
+from torch.nn import Module, Embedding, Linear, Dropout, Parameter
 from sklearn import metrics
 from tqdm import tqdm
 import wandb
